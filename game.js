@@ -35,19 +35,19 @@ let questions = [
     answer: 1
   },
   {
-    question: "9.	All of the following statements about antihistaminic are correct EXCEPT:",
-    choice1: "a.	Some histamine H1 receptor antagonists are used in the prophylaxis and treatment of motion sickness",
-    choice2: "b.	Promethazine possesses anti-emetic, sedative and anti-muscarinic activity",
-    choice3: "c.	Histamine H1 receptor antagonists inhibit the release of histamine",
-    choice4: "d.	Histamine H1 receptor antagonists are effective in the treatment of hay fever",
+    question: "All of the following statements about antihistaminic are correct EXCEPT:",
+    choice1: "Some histamine H1 receptor antagonists are used in the prophylaxis and treatment of motion sickness",
+    choice2: "Promethazine possesses anti-emetic, sedative and anti-muscarinic activity",
+    choice3: "Histamine H1 receptor antagonists inhibit the release of histamine",
+    choice4: "Histamine H1 receptor antagonists are effective in the treatment of hay fever",
     answer: 3
   },
   {
-    question: "10.	A 45-year-old woman complains of sudden onset of a non-productive cough and shortness of breath. Examination of the chest is unremarkable. Respiratory rate = 25, Pulse = 95. T = 98.2° F. In this setting which of the following is high in your differential diagnosis:",
-    choice1: "a.	Pulmonary embolism",
-    choice2: "b.	Myocardial infarction",
-    choice3: "c.	Asthma",
-    choice4: "d.	Pneumonia",
+    question: "A 45-year-old woman complains of sudden onset of a non-productive cough and shortness of breath. Examination of the chest is unremarkable. Respiratory rate = 25, Pulse = 95. T = 98.2° F. In this setting which of the following is high in your differential diagnosis:",
+    choice1: "Pulmonary embolism",
+    choice2: "Myocardial infarction",
+    choice3: "Asthma",
+    choice4: "Pneumonia",
     answer: 1
   }
 
