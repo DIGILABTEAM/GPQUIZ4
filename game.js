@@ -12,7 +12,7 @@ let availablequestions = [];
 let questions = [
   {
     question: "All of the followings are selective β2-agonist except:",
-    choice1: "aIsoprenaline",
+    choice1: "Isoprenaline",
     choice2: "Salbutamol",
     choice3: "Terbutaline",
     choice4: "Formeterol",
