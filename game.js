@@ -27,7 +27,7 @@ let questions = [
     answer: 4
   },
   {
-    question: "8.	All of the following statements about histamine is true except:",
+    question: "All of the following statements about histamine is true except:",
     choice1: "Increases blood pressure",
     choice2: "Stimulates gastric acid secretion",
     choice3: "Causes dilatation of capillaries",
