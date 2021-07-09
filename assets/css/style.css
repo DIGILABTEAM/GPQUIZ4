@@ -18,7 +18,9 @@
   --incorrect-color: #721c24;
   --lightpink-color: #f5c6cb;
 }
-
+@media screen and (max-width: 600px) and (min-width: 300px){
+  
+}
 * {
   margin: 0;
   padding: 0;
@@ -515,7 +517,9 @@ body {
   -ms-transition: all 0.3 ease;
   -o-transition: all 0.3 ease;
 }
-
+@media screen and (max-width: 600px) and (min-width: 300px){
+  
+}
 .logo {
   align-items: center;
   /* padding-top: 3px; */
