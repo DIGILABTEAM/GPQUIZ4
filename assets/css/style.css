@@ -2,7 +2,7 @@
 :root {
   --main-color: #f0f0f0;
   --light-color: #fff;
-  --primary-color: #0263ca;
+  --primary-color: #1475cf;
   --secondary-color: #cce5ff;
   --dark-color: #343a40;
   --lightblue-color: #84c5fe;
@@ -12,7 +12,7 @@
   --lime-color: #d4edda;
   --danger-color: #a42834;
   --pink-color: #f8d7da;
-  --info-color: #007bff;
+  --info-color: #1475cf;
   --correct-color: #155724;
   --lightgreen-color: #c3e6cb;
   --incorrect-color: #721c24;
@@ -71,7 +71,7 @@ body {
 .start_btn button {
   font-size: 25px;
   font-weight: 500;
-  color: var(--main-color);
+  color: #1475cf;
   padding: 15px 30px;
   outline: none;
   border: none;
@@ -80,7 +80,7 @@ body {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  background: var(--light-color);
+  background: #ffffff;
   cursor: pointer;
 }
 
@@ -156,7 +156,7 @@ body {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  color: var(--light-color);
+  color: #004085;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
