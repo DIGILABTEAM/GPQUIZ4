@@ -6,14 +6,14 @@
   --secondary-color: #cce5ff;
   --dark-color: #343a40;
   --lightblue-color: #84c5fe;
-  --hover-color: #004085;
+  --hover-color: #1475cf;
   --sky-color: #b8daff;
   --success-color: #23903c;
   --lime-color: #d4edda;
   --danger-color: #a42834;
   --pink-color: #f8d7da;
   --info-color: #1475cf;
-  --correct-color: #155724;
+  --correct-color: #23903c;
   --lightgreen-color: #c3e6cb;
   --incorrect-color: #721c24;
   --lightpink-color: #f5c6cb;
@@ -168,17 +168,17 @@ body {
 }
 
 .buttons button.quit {
-  color: var(--main-color);
+  color: #1475cf;
 }
 
 .buttons button.quit:hover {
-  color: var(--light-color);
-  background: var(--main-color);
+  color: #fff;
+  background: #259821;
 }
 
 .buttons button.restart {
   color: var(--light-color);
-  background: var(--main-color);
+  background: #1475cf;
 }
 
 .buttons button.restart:hover {
