@@ -29,6 +29,8 @@
   /* height: 50px; */
   /* width: 280px; */
   /* margin-top: 20px; */
+  height: inherit;
+  width: fit-content;
 }
 
 body {
