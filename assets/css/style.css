@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --main-color: #0168d6;
+  --main-color: #f0f0f0;
   --light-color: #fff;
   --primary-color: #0263ca;
   --secondary-color: #cce5ff;
@@ -24,6 +24,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  align-items: center;
+  /* padding-top: 1px; */
+  /* height: 50px; */
+  /* width: 280px; */
+  /* margin-top: 20px; */
 }
 
 body {
@@ -128,7 +133,7 @@ body {
 
 .info_box .info_list .info span {
   font-weight: 600;
-  color: var(--main-color);
+  color: #007bff;
 }
 
 .info_box .buttons {
@@ -275,7 +280,7 @@ body {
 }
 
 .quiz_box section .que_text {
-  font-size: 25px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -294,7 +299,7 @@ body {
   -o-border-radius: 5px;
   padding: 8px 15px;
   margin-bottom: 15px;
-  font-size: 17px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -507,4 +512,14 @@ body {
   -moz-transition: all 0.3 ease;
   -ms-transition: all 0.3 ease;
   -o-transition: all 0.3 ease;
+}
+
+.logo {
+  align-items: center;
+  /* padding-top: 3px; */
+  margin-top: 10rem;
+  margin-left: 450px;
+  height: 70px;
+  width: 280px;
+  /* margin-top: 20px; */
 }
