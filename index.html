@@ -16,7 +16,8 @@
       }
       .quiz-app{
         margin: 16px auto;
-        height: 630px;
+        height: auto;
+        min-height: 630px;
         width: 330px;
         background-color:#259821;
         border-style: solid;
@@ -32,7 +33,8 @@
       }
 
       #code1{
-        margin-left: 100px;
+        /* margin-left: 100px; */
+        text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
         color:#ffffff;
@@ -105,7 +107,7 @@
       .btn:hover{
           background:black;
       }
-      #next{
+      #next,.restart{
         padding: 15px 40px 15px 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
@@ -122,7 +124,7 @@
 
 
       }
-      #next:hover{
+      #next:hover,.restart:hover {
         background-color: white;
         color:#117EEB;
         border-color:white;
@@ -147,6 +149,9 @@
         text-align: center;
 
       }
+      .next-btn{
+        margin-bottom: 20px;
+      }
       
       
     </style>
@@ -157,7 +162,10 @@
         <div class="start" id="start" style="display: block;">
         <img src="Logo-01 - Copy.png" height="160px" width="160px" class="il"/>
         <h1 class="app">GAMING <br> QUIZ GP</h1>
-        <p id="code">&copy; Developer By Digilab</p>
+        <!-- <p id="code">&copy; Developer By Digilab</p> -->
+        <div class="next-btn">
+          <button class="restart" onclick="forceStart()">Start</button>
+        </div>
         </div>
           <div class="quiz" id="quiz-secreen" style="display:none;">          
             <div class="time-bar">
@@ -186,8 +194,11 @@
         <div class="result" id="resultSecreen" style="display: none;">
            <img src="Logo-01 - Copy.png" height="160px" width="160px" class="il"/>
         <h1 class="app"> Score : <span id="score">10</span></h1>
-        <p id="code1">Congratulations</p>
+        <h4 id="code1">Congratulations!!</h4>
 
+        <div class="next-btn">
+          <button class="restart" onclick="window.location.reload()">Restart</button>
+        </div>
 
         </div>
         </div>
@@ -211,6 +222,7 @@
     var btn=document.getElementsByClassName('btn');
     var next=document.getElementById('next');
     var choice=document.getElementById('choice');
+    var code1=document.getElementById('code1');
     var quizQuestions=[
       {
         question:"All of the followings are selective β2-agonist except:",
@@ -276,7 +288,7 @@
     for(var i=0;i<btn.length;i++){
       btn[i].onclick=function(){
         if(this.textContent==quizQuestions[currentQuestion].ans){
-            totalScore++;
+            totalScore+=10;
             if(currentQuestion<4){
             clearInterval(bar);
             currentQuestion++;
@@ -303,6 +315,9 @@
       quizScreen.style.display="none";
       resultSecreen.style.display="block";
       score.textContent=totalScore;
+      if(Math.round((quizQuestions.length*10)/2) > totalScore){
+        code1.textContent="Sorry!!";
+      }
     }
     function Inter(set){
     var statusTime=set;
@@ -310,13 +325,13 @@
     bar=setInterval(function(){
      if(statusTime==0){
          clearInterval(bar); 
-          // if(currentQuestion<4){
-          //   currentQuestion++;
-          //   nextQuestion(currentQuestion);
-          // }
-          // else{
-          //   endSecreen();
-          // } 
+          if(currentQuestion<4){
+            currentQuestion++;
+            nextQuestion(currentQuestion);
+          }
+          else{
+            endSecreen();
+          } 
            
         }
         timeLeft.style.width=statusTime+"px";
@@ -332,6 +347,12 @@
       endSecreen();
     }
    
+  }
+  function forceStart(){
+    clearInterval(z);
+    splashSecreen.style.display="none";
+    quizScreen.style.display="block";
+    nextQuestion(currentQuestion);
   }
     </script>
   </body>
