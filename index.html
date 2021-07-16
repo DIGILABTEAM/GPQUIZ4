@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <htm>
+
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <title>Quiz App</title>
     <style>
-      body{
-        margin:0px;
-        padding:0px;
-       background: white;
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: white;
         height: 100%;
         width: 100%;
       }
-      .quiz-app{
+
+      .quiz-app {
         margin: 16px auto;
         height: auto;
         min-height: 630px;
         width: 330px;
-        background-color:#259821;
+        background-color: #259821;
         border-style: solid;
         border-width: 10px;
-        border-color:#1475cf;
+        border-color: #1475cf;
         border-radius: 30px;
       }
-      #code{
+
+      #code {
         margin-left: 70px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        color:#ffffff;
+        color: #ffffff;
       }
 
-      #code1{
+      #code1 {
         /* margin-left: 100px; */
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        color:#ffffff;
+        color: #ffffff;
       }
 
-      .time-bar{
-        margin:30px auto;
+      .time-bar {
+        margin: 30px auto;
         width: 300px;
-        height:30px;
+        height: 30px;
         border-style: solid;
         border-width: 2px;
         border-radius: 30px;
         border-color: #ffffff;
-        background-color:#ffffff;
+        background-color: #ffffff;
       }
-      .time-left{
+
+      .time-left {
         width: 300px;
-        height:30px;
+        height: 30px;
         border-style: none;
         border-radius: 30px;
         border-color: #1475cf;
         background-color: #1475cf;
 
-        
+
       }
-      .time{
+
+      .time {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        color:#1475cf;
+        color: #1475cf;
         text-align: center;
       }
-      .q-text{
-        color:#ffffff;
+
+      .q-text {
+        color: #ffffff;
         text-align: left;
-        margin-left:20px;
+        margin-left: 20px;
         margin-top: 30px;
-         font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         font-size: 20px;
       }
-      #question{
-         font-family: 'Montserrat', sans-serif;
+
+      #question {
+        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 15px;
-        color:white;
-        padding:10px 20px 25px 20px;
+        color: white;
+        padding: 10px 20px 25px 20px;
 
       }
-      .btn{
+
+      .btn {
         width: 250px;
         height: 50px;
         margin-bottom: 10px;
@@ -94,20 +102,24 @@
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
-        background-color:#1475cf;
-        color:white;
+        background-color: #1475cf;
+        color: white;
         border-color: #ffffff;
-        outline:none;
-        
-        
+        outline: none;
+
+
       }
+
       /* .btn:hover{
         background: linear-gradient(90deg, #2f3031  46%, #1475cf 50%, #1475cf 100%);
       } */
-      .btn:hover{
-          background:black;
+      .btn:active {
+        background: rgb(0, 0, 0);
+
       }
-      #next,.restart{
+
+      #next,
+      .restart {
         padding: 15px 40px 15px 40px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
@@ -115,68 +127,73 @@
         border-style: solid;
         border-width: 1.5px;
         border-radius: 30px;
-        background-color:#259821;
-        color:white;
+        background-color: #259821;
+        color: white;
         border-color: #fcfcfc;
         margin-left: 100px;
         margin-top: 10px;
-        outline:none;
+        outline: none;
 
 
       }
-      #next:hover,.restart:hover {
+
+      #next:hover,
+      .restart:hover {
         background-color: white;
-        color:#117EEB;
-        border-color:white;
+        color: #117EEB;
+        border-color: white;
       }
-      #dots{
-        color:#ffffff;
+
+      #dots {
+        color: #ffffff;
         margin-left: 20px;
         margin-top: -20px;
       }
-      .il{
-        color:white;
+
+      .il {
+        color: white;
         font-size: 100px;
-        margin-top:130px;
+        margin-top: 130px;
         margin-left: 80px;
         border-radius: 12px;
       }
-      .app{
+
+      .app {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         font-size: 25px;
-        color:white;
+        color: white;
         text-align: center;
 
       }
-      .next-btn{
+
+      .next-btn {
         margin-bottom: 20px;
       }
-      
-      
     </style>
   </head>
+
   <body>
     <div class="main-div">
-        <div class="quiz-app">
+      <div class="quiz-app">
         <div class="start" id="start" style="display: block;">
-        <img src="Logo-01 - Copy.png" height="160px" width="160px" class="il"/>
-        <h1 class="app">GAMING <br> QUIZ GP</h1>
-        <p id="code">&copy; Developed By Digilab</p>
-        <div class="next-btn">
-          <button class="restart" onclick="forceStart()">Start</button>
+          <img src="Logo-01 - Copy.png" height="160px" width="160px" class="il" />
+          <h1 class="app">GAMING <br> QUIZ GP</h1>
+          <p id="code">&copy; Developed By Digilab</p>
+          <div class="next-btn">
+            <button class="restart" onclick="forceStart()">Start</button>
+          </div>
         </div>
-        </div>
-          <div class="quiz" id="quiz-secreen" style="display:none;">          
-            <div class="time-bar">
+        <div class="quiz" id="quiz-secreen" style="display:none;">
+          <div class="time-bar">
             <div class="time-left" id="timeLeft">
-            
+
             </div>
           </div>
           <div class="question-no">
             <h3 class="q-text">Questions<span id="currentQuestion"> 1</span> / <span id="totalQuestions"> 10</span></h3>
             <h3 id="dots">............................................................</h3>
-       </div>
+          </div>
           <div class="qus">
             <h1 id="question">Developed By</h1>
 
@@ -192,168 +209,168 @@
           </div>
         </div>
         <div class="result" id="resultSecreen" style="display: none;">
-           <img src="Logo-01 - Copy.png" height="160px" width="160px" class="il"/>
-        <h1 class="app"> Score : <span id="score">10</span></h1>
-        <h4 id="code1">Congratulations!!</h4>
+          <img src="Logo-01 - Copy.png" height="160px" width="160px" class="il" />
+          <h1 class="app"> Score : <span id="score">10</span></h1>
+          <h4 id="code1">Congratulations!!</h4>
 
-        <div class="next-btn">
-          <button class="restart" onclick="window.location.reload()">Restart</button>
-        </div>
+          <div class="next-btn">
+            <button class="restart" onclick="window.location.reload()">Restart</button>
+          </div>
 
         </div>
-        </div>
+      </div>
     </div>
-    <script> 
-    var currentQuestion=0;
-    var totalScore=0;
-    var cQuestion=document.getElementById('currentQuestion');
-    var totalQuestions=document.getElementById('totalQuestions');
-    var splashSecreen=document.getElementById('start');
-    var quizScreen=document.getElementById('quiz-secreen');
-    var x=0;
-    var resultSecreen=document.getElementById('resultSecreen');
-    var timeLeft=document.getElementById('timeLeft');
-    var score=document.getElementById('score');
-    var question=document.getElementById('question');
-    var opt1=document.getElementById('opt1');
-    var opt2=document.getElementById('opt2');
-    var opt3=document.getElementById('opt3');
-    var opt4=document.getElementById('opt4');
-    var btn=document.getElementsByClassName('btn');
-    var next=document.getElementById('next');
-    var choice=document.getElementById('choice');
-    var code1=document.getElementById('code1');
-    var quizQuestions=[
-      {
-        question:"All of the followings are selective β2-agonist except:",
-        choice1:"Isoprenaline",
-        choice2:"Salbutamol",
-        choice3:"Terbutaline",
-        choice4:"Formeterol",
-        ans:"Isoprenaline",
-      },
-         {
-        question:"All of the following combinations of drug and its mechanism of action is correct except",
-        choice1:"Salbutamol: stimulation of β2 receptor causing bronchodilation",
-        choice2:"Sodium cromoglycate: mast cell stabilization",
-        choice3:"Zafirlukast: leukotriene modulators",
-        choice4:"Theophylline: non-selective β2 receptor stimulation causing bronchodilation",
-        ans:"Theophylline: non-selective β2 receptor stimulation causing bronchodilation",
-      },
-         {
-        question:"All of the following statements about histamine is true except:",
-        choice1:"Increases blood pressure",
-        choice2:"Stimulates gastric acid secretion",
-        choice3:"Causes constriction of bronchial smooth muscles",
-        choice4:"Causes dilatation of capillaries",
-        ans:"Increases blood pressure",
-      },
-         {
-        question:"All of the following statements about antihistaminic are correct EXCEPT:",
-        choice1:"Some histamine H1 receptor antagonists are used in the prophylaxis and treatment of motion sickness",
-        choice2:"Promethazine possesses anti-emetic, sedative and anti-muscarinic activity",
-        choice3:"Histamine H1 receptor antagonists inhibit the release of histamine",
-        choice4:"Histamine H1 receptor antagonists are effective in the treatment of hay fever",
-        ans:"Histamine H1 receptor antagonists inhibit the release of histamine",
-      },
-         {
-        question:"A 45-year-old woman complains of sudden onset of a non-productive cough and shortness of breath. Examination of the chest is unremarkable. Respiratory rate = 25, Pulse = 95. T = 98.2° F. In this setting which of the following is high in your differential diagnosis:",
-        choice1:"Pulmonary embolism",
-        choice2:"Myocardial infarction",
-        choice3:"Asthma",
-        choice4:"Pneumonia",
-        ans:"Pulmonary embolism",
+    <script>
+      var currentQuestion = 0;
+      var totalScore = 0;
+      var cQuestion = document.getElementById('currentQuestion');
+      var totalQuestions = document.getElementById('totalQuestions');
+      var splashSecreen = document.getElementById('start');
+      var quizScreen = document.getElementById('quiz-secreen');
+      var x = 0;
+      var resultSecreen = document.getElementById('resultSecreen');
+      var timeLeft = document.getElementById('timeLeft');
+      var score = document.getElementById('score');
+      var question = document.getElementById('question');
+      var opt1 = document.getElementById('opt1');
+      var opt2 = document.getElementById('opt2');
+      var opt3 = document.getElementById('opt3');
+      var opt4 = document.getElementById('opt4');
+      var btn = document.getElementsByClassName('btn');
+      var next = document.getElementById('next');
+      var choice = document.getElementById('choice');
+      var code1 = document.getElementById('code1');
+      var quizQuestions = [
+        {
+          question: "All of the followings are selective β2-agonist except:",
+          choice1: "Isoprenaline",
+          choice2: "Salbutamol",
+          choice3: "Terbutaline",
+          choice4: "Formeterol",
+          ans: "Isoprenaline",
+        },
+        {
+          question: "All of the following combinations of drug and its mechanism of action is correct except",
+          choice1: "Salbutamol: stimulation of β2 receptor causing bronchodilation",
+          choice2: "Sodium cromoglycate: mast cell stabilization",
+          choice3: "Zafirlukast: leukotriene modulators",
+          choice4: "Theophylline: non-selective β2 receptor stimulation causing bronchodilation",
+          ans: "Theophylline: non-selective β2 receptor stimulation causing bronchodilation",
+        },
+        {
+          question: "All of the following statements about histamine is true except:",
+          choice1: "Increases blood pressure",
+          choice2: "Stimulates gastric acid secretion",
+          choice3: "Causes constriction of bronchial smooth muscles",
+          choice4: "Causes dilatation of capillaries",
+          ans: "Increases blood pressure",
+        },
+        {
+          question: "All of the following statements about antihistaminic are correct EXCEPT:",
+          choice1: "Some histamine H1 receptor antagonists are used in the prophylaxis and treatment of motion sickness",
+          choice2: "Promethazine possesses anti-emetic, sedative and anti-muscarinic activity",
+          choice3: "Histamine H1 receptor antagonists inhibit the release of histamine",
+          choice4: "Histamine H1 receptor antagonists are effective in the treatment of hay fever",
+          ans: "Histamine H1 receptor antagonists inhibit the release of histamine",
+        },
+        {
+          question: "A 45-year-old woman complains of sudden onset of a non-productive cough and shortness of breath. Examination of the chest is unremarkable. Respiratory rate = 25, Pulse = 95. T = 98.2° F. In this setting which of the following is high in your differential diagnosis:",
+          choice1: "Pulmonary embolism",
+          choice2: "Myocardial infarction",
+          choice3: "Asthma",
+          choice4: "Pneumonia",
+          ans: "Pulmonary embolism",
+        }
+      ];
+      function nextQuestion(no) {
+        Inter(300);
+        cQuestion.textContent = " " + (no + 1);
+        totalQuestions.textContent = " " + quizQuestions.length;
+        console.log("number " + no);
+        question.textContent = quizQuestions[no].question;
+        opt1.textContent = quizQuestions[no].choice1;
+        opt2.textContent = quizQuestions[no].choice2;
+        opt3.textContent = quizQuestions[no].choice3;
+        opt4.textContent = quizQuestions[no].choice4;
       }
-    ];
-    function nextQuestion(no){
-    Inter(300);
-    cQuestion.textContent=" "+(no+1);
-    totalQuestions.textContent=" "+quizQuestions.length;
-    console.log("number "+no);
-    question.textContent=quizQuestions[no].question;
-    opt1.textContent=quizQuestions[no].choice1;
-    opt2.textContent=quizQuestions[no].choice2;
-    opt3.textContent=quizQuestions[no].choice3;
-    opt4.textContent=quizQuestions[no].choice4;
-  }
-    var z=setInterval(function(){
-        if(x==1){
+      var z = setInterval(function () {
+        if (x == 1) {
           clearInterval(z);
-          splashSecreen.style.display="none";
-          quizScreen.style.display="block";
+          splashSecreen.style.display = "none";
+          quizScreen.style.display = "block";
           nextQuestion(currentQuestion);
         }
         x++;
-    },2000);
-    for(var i=0;i<btn.length;i++){
-      btn[i].onclick=function(){
-        if(this.textContent==quizQuestions[currentQuestion].ans){
-            totalScore+=10;
-            if(currentQuestion<4){
-            clearInterval(bar);
-            currentQuestion++;
-            nextQuestion(currentQuestion);
-            console.log(totalScore);
-            }else{
+      }, 2000);
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].onclick = function () {
+          if (this.textContent == quizQuestions[currentQuestion].ans) {
+            totalScore += 10;
+            if (currentQuestion < 4) {
+              clearInterval(bar);
+              currentQuestion++;
+              nextQuestion(currentQuestion);
+              console.log(totalScore);
+            } else {
               endSecreen();
             }
-        }
-        else{
-          if(currentQuestion<4){
-            currentQuestion++;
-            clearInterval(bar);
-            nextQuestion(currentQuestion);
-            console.log(totalScore);
-            }else{
-              endSecreen();
-            }
-        }
-      }
-    }
-    var bar;
-    function endSecreen(){
-      quizScreen.style.display="none";
-      resultSecreen.style.display="block";
-      score.textContent=totalScore;
-      if(Math.round((quizQuestions.length*10)/2) > totalScore){
-        code1.textContent="Sorry!!";
-      }
-    }
-    function Inter(set){
-    var statusTime=set;
-    timeLeft.style.width=statusTime+"px";
-    bar=setInterval(function(){
-     if(statusTime==0){
-         clearInterval(bar); 
-          if(currentQuestion<4){
-            currentQuestion++;
-            nextQuestion(currentQuestion);
           }
-          else{
-            endSecreen();
-          } 
-           
+          else {
+            if (currentQuestion < 4) {
+              currentQuestion++;
+              clearInterval(bar);
+              nextQuestion(currentQuestion);
+              console.log(totalScore);
+            } else {
+              endSecreen();
+            }
+          }
         }
-        timeLeft.style.width=statusTime+"px";
-        statusTime=statusTime-30;
-    },1500); 
-   }
-  next.onclick=function(){
-    if(currentQuestion<4){
-    currentQuestion++;
-    nextQuestion(currentQuestion);
-    }
-    else{
-      endSecreen();
-    }
-   
-  }
-  function forceStart(){
-    clearInterval(z);
-    splashSecreen.style.display="none";
-    quizScreen.style.display="block";
-    nextQuestion(currentQuestion);
-  }
+      }
+      var bar;
+      function endSecreen() {
+        quizScreen.style.display = "none";
+        resultSecreen.style.display = "block";
+        score.textContent = totalScore;
+        if (Math.round((quizQuestions.length * 10) / 2) > totalScore) {
+          code1.textContent = "Sorry!!";
+        }
+      }
+      function Inter(set) {
+        var statusTime = set;
+        timeLeft.style.width = statusTime + "px";
+        bar = setInterval(function () {
+          if (statusTime == 0) {
+            clearInterval(bar);
+            if (currentQuestion < 4) {
+              currentQuestion++;
+              nextQuestion(currentQuestion);
+            }
+            else {
+              endSecreen();
+            }
+
+          }
+          timeLeft.style.width = statusTime + "px";
+          statusTime = statusTime - 30;
+        }, 1500);
+      }
+      next.onclick = function () {
+        if (currentQuestion < 4) {
+          currentQuestion++;
+          nextQuestion(currentQuestion);
+        }
+        else {
+          endSecreen();
+        }
+
+      }
+      function forceStart() {
+        clearInterval(z);
+        splashSecreen.style.display = "none";
+        quizScreen.style.display = "block";
+        nextQuestion(currentQuestion);
+      }
     </script>
   </body>
 </htm>
